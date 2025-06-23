@@ -39,10 +39,10 @@ Search Bar for Notes
 ## 🗂️ Folder Structure
 
 src/ <br />
-├── App.js               // Main application logic <br />
-├── App.css             // Styling (pastel themes, layout) <br />
-├── index.js            // Entry point <br />
-├── My Components/      // Reusable component structure <br />
+├── App.js               ( Main application logic ) <br />
+├── App.css             ( Styling (pastel themes, layout) ) <br />
+├── index.js            ( Entry point ) <br />
+├── My Components/      ( Reusable component structure ) <br />
 │   ├── Header.js <br />
 │   ├── Footer.js <br />
 │   ├── Todos.js <br />
