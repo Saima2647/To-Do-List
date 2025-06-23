@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* color Palette CSS */
+.color-picker {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Notes CSS */
+textarea.note-text {
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  resize: none;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-right: 25px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Note Container */
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Single Note */
+.note {
+  position: relative;
+  flex: 1 1 200px;
+  max-width: 300px;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  transition: all 0.2s ease;
+}
+
+.note-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: inherit;
+}
+
+.note-text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  font-size: 16px;
+  padding-right: 25px; 
+  padding-top: 20px; 
+  overflow-y: auto;
+  max-height: 180px; 
+
+}
+
+/* Heading Style */
+.todo-heading {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: cursive;
+  margin-right: 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Toolbar Alignment */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Button CSS */
+.add-button {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.delete-btn:hover {
+  color: black;
+}
+
+/* Delete Animation CSS */
+.fade-out {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+/* Scrollbar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar back color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff9a9e, #fad0c4);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#f87b7f, #f7b3a0);
+}
