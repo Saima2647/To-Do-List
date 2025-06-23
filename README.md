@@ -22,21 +22,28 @@ Easily create, color, organize, and search your notes — all in one place!
 
 ## 🖼️ Screenshots
 
+Home page
 ![Home page](image.png)
+
+Colour Palette
 ![Colour Palette](image-2.png)
+
+Scrollbar & To-Do list
 ![Scrollbar & To-Do list](image-3.png)
+
+Search Bar for Notes
 ![Search Bar for Notes](image-4.png)
 
 ---
 
 ## 🗂️ Folder Structure
 
-src/
-├── App.js               // Main application logic
-├── App.css             // Styling (pastel themes, layout)
-├── index.js            // Entry point
-├── My Components/      // Reusable component structure
-│   ├── Header.js
-│   ├── Footer.js
-│   ├── Todos.js
-│   └── TodoItem.js
+src/ <br />
+├── App.js               // Main application logic <br />
+├── App.css             // Styling (pastel themes, layout) <br />
+├── index.js            // Entry point <br />
+├── My Components/      // Reusable component structure <br />
+│   ├── Header.js <br />
+│   ├── Footer.js <br />
+│   ├── Todos.js <br />
+│   └── TodoItem.js <br />
